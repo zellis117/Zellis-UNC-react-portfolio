@@ -1,0 +1,159 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 10vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-image: linear-gradient(to bottom right, red, yellow);
+  min-height: 10vh;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+/* Header and footer CSS */
+.header{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.nav li{
+  list-style: none;
+}
+
+.footer{
+  background-image: linear-gradient(to bottom right, red, yellow);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+/* Resume page CSS */
+.resume{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.resume button{
+  width: 200px;
+  height: 200px;
+  background-color: rgb(112, 201, 231);
+}
+
+.resume button:hover{cursor: pointer;}
+
+.resume a{
+  width: 200px;
+  height: 200px;
+  background-image: url('./Images/linkedInLogo.png');
+  background-size: cover;
+}
+
+/* About / home page CSS */
+.about img{
+  width: 300px;
+  height: 300px;
+}
+
+.about ul{
+  margin-bottom: 100px;
+}
+
+/* Background images for the project boxes */
+.hike img{background-image: url('./Images/HikePlanner.jpg');}
+.movie img{background-image: url('./Images/movieApp.png');}
+.ballFlight img{background-image: url('./Images/ball_flight.jpg');}
+.starBattle img{background-image: url('./Images/star_battle.jpg');}
+.TLG img{background-image: url('./Images/tlg_golf_games.jpg');}
+.weather img{background-image: url('./Images/weatherForecaster_img.jpg');}
+
+.hike img, .ballFlight img, .movie img,
+ .starBattle img, .TLG img, .weather img{
+  width: 300px;
+  height: 150px;
+  background-size: cover;
+}
+
+.container1, .container2{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.project{
+  display: flex;
+  justify-content: center;
+  width: 300px;
+  height: 200px;
+  border: 3px solid black;
+  margin: 5px;
+  background-color: gray;
+}
+
+#repoLinks{
+  list-style: none;
+  margin-bottom: 100px;
+}
+
+/* Contact form CSS */
+.contactForm div{
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#name, #email{
+  width: 250px;
+  height: 40px;
+}
+
+#message{
+  width: 250px;
+  height: 100px;
+}
+
+.contactForm button{
+  width: 100px;
+  height: 30px;
+  background-color: rgb(112, 201, 231);
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 910px){
+  .container1, .container2{
+    flex-direction: column;
+  }
+}
